@@ -1,0 +1,186 @@
+@import "colors";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Merriweather, sans-serif ";
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.index-span {
+	border-right: 0.1em solid;
+	animation: typewriter 1s steps(1) infinite;
+}
+
+// NAV
+
+.navbar-expand-lg .offcanvas {
+	flex-grow: initial !important;
+}
+
+.offcanvas-end {
+	background-color: $primary-color !important;
+	width: 330px !important;
+}
+
+.offcanvas-body {
+	text-align: center;
+}
+
+.active {
+	font-weight: bold;
+}
+
+// NAV Animation & Transition
+
+.fill {
+	li a {
+		position: relative;
+		transition: all 1s;
+
+		&:after {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			margin: 0;
+			opacity: 0;
+			text-align: left;
+			width: 0%;
+			color: transparent;
+			background-color: #ffff;
+			height: 1px;
+		}
+
+		&:hover {
+			background-color: $secondary-color;
+			z-index: 1;
+
+			&:after {
+				z-index: -10;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// Logo
+.logo {
+	width: 80px;
+	cursor: pointer;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+// MAIN CONTENT
+
+main {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: $secondary-color;
+
+	.main-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.profile-image {
+		width: 150px;
+		border-radius: 100px;
+		z-index: 100;
+	}
+}
+
+.second-container {
+	margin-top: 40px;
+}
+.third-container {
+	margin: 40px auto;
+}
+
+// PROJECTS
+
+.project-section-one {
+	background-color: $primary-color;
+	margin-top: 50px;
+	padding: 0px 0px 100px 0px;
+}
+
+.project-title {
+	margin: 50px 0px !important;
+}
+
+.row {
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+}
+
+// Carousel
+.carousel-inner {
+	width: 60% !important;
+	margin: 0 auto;
+}
+.carousel-caption {
+	position: initial !important;
+	background-color: $primary-color;
+
+	&:hover {
+		transition: all 1s;
+		background-color: #ffff;
+	}
+}
+
+.carousel-item {
+	text-decoration: none;
+}
+
+// Cards
+
+.card-body {
+	background-color: $primary-color;
+
+	.btn {
+		background-color: $secondary-color;
+		width: 60%;
+		margin: 0 auto;
+
+		&:hover {
+			background-color: #ffff;
+			font-weight: 500;
+		}
+	}
+}
+
+// FOOTER
+
+footer {
+	display: flex;
+	flex-shrink: 0;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: $primary-color;
+}
+
+// ANIMATIONS
+
+@keyframes typewriter {
+	50% {
+		border-color: transparent;
+	}
+}

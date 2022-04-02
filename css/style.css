@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,600;1,700&family=Merriweather:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather, sans-serif ";
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.index-span {
+  border-right: 0.1em solid;
+  -webkit-animation: typewriter 1s steps(1) infinite;
+          animation: typewriter 1s steps(1) infinite;
+}
+
+.navbar-expand-lg .offcanvas {
+  -webkit-box-flex: initial !important;
+      -ms-flex-positive: initial !important;
+          flex-grow: initial !important;
+}
+
+.offcanvas-end {
+  background-color: #fbeee6 !important;
+  width: 330px !important;
+}
+
+.offcanvas-body {
+  text-align: center;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.fill li a {
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.fill li a:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  text-align: left;
+  width: 0%;
+  color: transparent;
+  background-color: #ffff;
+  height: 1px;
+}
+
+.fill li a:hover {
+  background-color: #d9ccc7;
+  z-index: 1;
+}
+
+.fill li a:hover:after {
+  z-index: -10;
+  opacity: 1;
+}
+
+.logo {
+  width: 80px;
+  cursor: pointer;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #d9ccc7;
+}
+
+main .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main .profile-image {
+  width: 150px;
+  border-radius: 100px;
+  z-index: 100;
+}
+
+.second-container {
+  margin-top: 40px;
+}
+
+.third-container {
+  margin: 40px auto;
+}
+
+.project-section-one {
+  background-color: #fbeee6;
+  margin-top: 50px;
+  padding: 0px 0px 100px 0px;
+}
+
+.project-title {
+  margin: 50px 0px !important;
+}
+
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.carousel-inner {
+  width: 60% !important;
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  position: initial !important;
+  background-color: #fbeee6;
+}
+
+.carousel-caption:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-color: #ffff;
+}
+
+.carousel-item {
+  text-decoration: none;
+}
+
+.card-body {
+  background-color: #fbeee6;
+}
+
+.card-body .btn {
+  background-color: #d9ccc7;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.card-body .btn:hover {
+  background-color: #ffff;
+  font-weight: 500;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fbeee6;
+}
+
+@-webkit-keyframes typewriter {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typewriter {
+  50% {
+    border-color: transparent;
+  }
+}
+
+h1 {
+  color: #000000;
+  font-size: 65px !important;
+  margin: 50px auto !important;
+}
+
+.index-title h1 {
+  font-size: 45px !important;
+  text-transform: uppercase;
+  margin: 20px auto !important;
+}
+
+.index-title h2 {
+  font-size: 30px !important;
+  margin: 20px 0px;
+  width: 100%;
+}
+
+h2 {
+  color: #000000;
+  font-size: 20px !important;
+  font-weight: 200 !important;
+  width: 85%;
+  margin: 0 auto;
+}
+
+h3 {
+  color: #000000;
+  font-size: 30px !important;
+  font-weight: bold !important;
+}
+
+h4 {
+  color: #000000;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+}
+
+.card-body h4 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-body .row h4 {
+  text-transform: capitalize;
+}
+
+p {
+  color: #000000;
+  font-size: 15px !important;
+  font-family: sans-serif !important;
+}
+
+footer p {
+  cursor: pointer;
+}
+
+.carousel-caption p {
+  margin-bottom: 3rem;
+  font-weight: 100;
+}
+
+.card-body p {
+  color: #000000;
+}
+
+a {
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+
+i {
+  font-size: 25px;
+  margin: 0px 10px;
+}
+
+#circle-background {
+  z-index: 50;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: #fbeee6;
+  -webkit-animation: circles 20s infinite;
+          animation: circles 20s infinite;
+}
+
+.small {
+  width: 200px;
+  height: 200px;
+}
+
+.medium {
+  width: 400px;
+  height: 400px;
+}
+
+.large {
+  width: 600px;
+  height: 600px;
+}
+
+.xlarge {
+  width: 800px;
+  height: 800px;
+}
+
+.xxlarge {
+  width: 1000px;
+  height: 1000px;
+}
+
+.shade1 {
+  opacity: 0.2;
+}
+
+.shade2 {
+  opacity: 0.5;
+}
+
+.shade3 {
+  opacity: 0.7;
+}
+
+.shade4 {
+  opacity: 0.8;
+}
+
+.shade5 {
+  opacity: 0.9;
+}
+
+@-webkit-keyframes circles {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@keyframes circles {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+/*# sourceMappingURL=style.css.map */

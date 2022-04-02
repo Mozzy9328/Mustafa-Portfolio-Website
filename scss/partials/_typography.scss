@@ -1,0 +1,99 @@
+// HEADERS
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,600;1,700&family=Merriweather:wght@300;700&display=swap");
+
+h1 {
+	color: $third-color;
+	font-size: 65px !important;
+	margin: 50px auto !important;
+}
+
+.index-title {
+	h1 {
+		font-size: 45px !important;
+		text-transform: uppercase;
+		margin: 20px auto !important;
+	}
+
+	h2 {
+		font-size: 30px !important;
+		margin: 20px 0px;
+		width: 100%;
+	}
+}
+
+h2 {
+	color: $third-color;
+	font-size: 20px !important;
+	font-weight: 200 !important;
+	width: 85%;
+	margin: 0 auto;
+}
+
+h3 {
+	color: $third-color;
+	font-size: 30px !important;
+	font-weight: bold !important;
+}
+
+h4 {
+	color: $third-color;
+	font-size: 20px !important;
+	font-weight: bold !important;
+	text-transform: uppercase;
+}
+
+.card-body {
+	h4 {
+		margin-bottom: 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.row {
+		h4 {
+			text-transform: capitalize;
+		}
+	}
+}
+
+//PARAGRAPHS
+
+p {
+	color: $third-color;
+	font-size: 15px !important;
+	font-family: sans-serif !important;
+}
+
+footer {
+	p {
+		cursor: pointer;
+	}
+}
+
+.carousel-caption {
+	p {
+		margin-bottom: 3rem;
+		font-weight: 100;
+	}
+}
+
+.card-body {
+	p {
+		color: $third-color;
+	}
+}
+
+// ANCHOR
+
+a {
+	color: $third-color !important;
+	text-decoration: none !important;
+}
+
+// ICONS
+
+i {
+	font-size: 25px;
+	margin: 0px 10px;
+}
